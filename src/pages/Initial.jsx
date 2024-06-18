@@ -1,3 +1,3 @@
 export const Initial = () => {
-  return <div>Initial</div>;
+  return <div>Initial</div>
 };

@@ -15,21 +15,21 @@ const inputs = [
     espesific: '2021-12-31'
   },
   { 
-    id: 'star',
-    label: 'Hora de inicio: ',
+    id: 'start',
+    label: 'Hora de inicio:',
     type: 'time',
     espesific: '08:00'
   },
   { 
     id: 'end',
-    label: 'Hora de termino: ',
+    label: 'Hora de termino:',
     type: 'time',
     espesific: '17:00'
   },
   { 
     id: 'order',
     type: 'number',
-    label: 'Numero de orden: ',
+    label: 'Numero de orden:',
     placeholder: '000000',
     espesific: '039228'
   }
