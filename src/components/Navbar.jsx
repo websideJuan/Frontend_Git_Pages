@@ -16,7 +16,7 @@ export const Navbar = () => {
       <div className={`bg-white h-100 navegation__content pe-4 ${show ? 'show' : ''}`}>
 
         <div className='py-2 px-3'>
-          <span className='fw-bold' style={{ fontSize: 1.3 + 'rem' }}>
+          <span className='fw-bold'>
             <img src={GRUA_LOGO} width={60} height={60} alt="Logo grua" />
             RyA Gruas
           </span>
@@ -24,7 +24,7 @@ export const Navbar = () => {
 
         <div className='dropdown mb-2'>
           <button className='btn btn-dropdown dropdown-toggle w-100 text-secondary' type='button' data-bs-toggle="dropdown" aria-expanded="false">
-            <i className="fa-regular fa-clipboard fa-lg"></i>
+            <i className="fa-regular fa-clipboard fa-sm"></i>
             <span className='ms-2 me-auto'>Trabajos</span>
             <i className="fa-solid fa-angle-right fa-sm"></i>
           </button>
@@ -53,17 +53,17 @@ export const Navbar = () => {
             </li>
           </ul>
         </div>
-
+        
       </div>
     </nav>
-    <div className='d-flex px-2 mx-2 py-3 justify-content-between'> 
+    <div className='d-flex px-2 py-3 justify-content-between'> 
 
       <button onClick={() => setShow(true)} className='btn btn-outline-secondary border-0 d-lg-none'>
           <i className="fa-solid fa-bars fa-lg"></i>
       </button>
 
       <div className='row align-items-center'>
-        <div className='col-2 p-0 d-flex justify-content-end'>
+        <div className='col-2 p-0 d-flex justify-content-center'>
           <i className="fa-solid fa-magnifying-glass"></i>
         </div>
         <div className='col-10 p-0'>
@@ -71,8 +71,8 @@ export const Navbar = () => {
         </div>
       </div>
 
-      <div className='dropdown m-auto me-0'>
-        <button className='btn btn-outline-secondary border-0 position-relative dropdown-toggle btn-reset me-2 p-1 px-2' style={{ backgroundColor: '#aa4eae', color: 'white' }} type='button' data-bs-toggle="dropdown" aria-expanded="false">
+      <div className='dropdown'>
+        <button className='btn btn-outline-secondary border-0 position-relative dropdown-toggle btn-reset p-1 px-2' style={{ backgroundColor: '#aa4eae', color: 'white' }} type='button' data-bs-toggle="dropdown" aria-expanded="false">
           <i className="fa-solid fa-bell fa-lg"></i>
           <span className='position-absolute navegation-badge'>
             3

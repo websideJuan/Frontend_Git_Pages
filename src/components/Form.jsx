@@ -27,13 +27,14 @@ export const Form = () => {
 
   return <form className="bg-transparent" onSubmit={handlerSubmit}>
 
-    {message !== '' && <p className="text-center text-success">
+    {message && <p className="text-center text-success">
         {message}
     </p>}
 
     <Input input={input} setInput={setInput} error={error} setError={setError} />
 
-    <button className="btn btn-outline-secondary w-100 shadow-sx bg-white">
+    <button
+      className="btn btn-outline-secondary w-100 shadow-sx bg-white">
       Enviar
     </button>
   </form>

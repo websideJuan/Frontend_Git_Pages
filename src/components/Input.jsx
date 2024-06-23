@@ -49,8 +49,8 @@ export const Input = ({ input, setInput, setError }) => {
     setError([])
   }
 
-  return inputs.map(({ id, type, placeholder }) => (
-      <div key={id} className='form-group mb-4 shadow-sx p-3 bg-white rounded-3'>
+  return inputs.map(({ id, type, placeholder, label }) => (
+      <div key={id} className='form-group mb-3 shadow-sx p-5 px-4 bg-white rounded-3'>
         {
           id === 'name' && (
             <>
@@ -87,7 +87,7 @@ export const Input = ({ input, setInput, setError }) => {
           ) || (
             <>
               <small className="text-secondary">
-                {type}
+                {label}
               </small>
               <input
                 type={type || 'text'}

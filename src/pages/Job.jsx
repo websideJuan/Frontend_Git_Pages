@@ -77,7 +77,7 @@ export const Job = () => {
       </div>
 
       <div className="col-12 p-0">
-        <div className="card shadow-sx">
+        <div className="card shadow-sx border-0">
           API google maps
 
           <div className="map-container">

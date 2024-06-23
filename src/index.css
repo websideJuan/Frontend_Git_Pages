@@ -31,6 +31,7 @@ body {
   background-image: linear-gradient(90deg, #78e9f2, #b5ffff);
   color: #333333;
 }
+
 /*Navbar*/
 .navbar {
   background-color: transparent !important;
@@ -138,6 +139,24 @@ body {
     color: #544f5a !important;
     transform: translate(0%);
     transition: transform 0.3s;
+  }
+}
+
+.viewport-width {
+  width: 100%;
+}
+
+@media (min-width: 764px) {
+  .viewport-width {
+    max-width: 100dvw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .viewport-width {
+    max-width: 80dvw;
+    margin: 0 auto;
+    margin-right: 4rem;
   }
 }
 
